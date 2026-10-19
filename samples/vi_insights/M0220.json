@@ -1,0 +1,21 @@
+{
+  "member_id": "M0220",
+  "insight": "Your recent mood check-ins have been low, and that matters more than any step or sleep goal this week. You don't have to work through this alone.",
+  "evidence": [
+    "recent_mood_checkins: 3, 1, 1, 2, 2"
+  ],
+  "actions": [
+    "Please consider talking with a qualified professional, such as your doctor or a counsellor, this week.",
+    "Reach out to someone you trust, and use your company's confidential support service if you have one."
+  ],
+  "tone": "supportive",
+  "safety_flag": true,
+  "meta": {
+    "source": "escalation_template",
+    "attempts": 0,
+    "backend": "ollama",
+    "model": "qwen2.5:3b",
+    "problems": [],
+    "latency_ms": 0
+  }
+}

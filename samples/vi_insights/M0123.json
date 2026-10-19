@@ -1,0 +1,22 @@
+{
+  "member_id": "M0123",
+  "insight": "Your recent drop in steps aligns with a slight decrease in active minutes, suggesting you might benefit from a short, regular walk during your shift.",
+  "evidence": [
+    "steps_7d: 9275 vs baseline 9892 (-6.2%)",
+    "active_minutes_7d: 38.4 vs baseline 38.8 (-0.9%)"
+  ],
+  "actions": [
+    "Take a 10-minute walk during your lunch break",
+    "Schedule a 15-minute walk during your shift change"
+  ],
+  "tone": "supportive",
+  "safety_flag": false,
+  "meta": {
+    "source": "llm",
+    "attempts": 1,
+    "backend": "ollama",
+    "model": "qwen2.5:3b",
+    "problems": [],
+    "latency_ms": 17069
+  }
+}

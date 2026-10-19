@@ -1,0 +1,68 @@
+{
+  "member_id": "M0185",
+  "as_of": "2026-09-28",
+  "windows_days": [
+    7,
+    30
+  ],
+  "profile": {
+    "age_band": "35-44",
+    "job_type": "desk"
+  },
+  "metrics": {
+    "steps": {
+      "7d": 5093,
+      "30d": 5199,
+      "chg_pct": -2.1
+    },
+    "active_minutes": {
+      "7d": 12.1,
+      "30d": 12.5,
+      "chg_pct": -2.7
+    },
+    "sleep_hours": {
+      "7d": 7.1,
+      "30d": 7.1,
+      "chg_pct": 0.3
+    },
+    "resting_hr": {
+      "7d": 66.9,
+      "30d": 66.9,
+      "chg_pct": -0.1
+    }
+  },
+  "engagement": {
+    "app_opens_per_day": {
+      "7d": 2.4,
+      "30d": 1.6,
+      "chg_pct": 48.7
+    },
+    "days_since_last_open": 0,
+    "last_active_date": "2026-09-28",
+    "app_streak_days": 14,
+    "content_views_7d": 14,
+    "challenges_joined_30d": 0
+  },
+  "activity": {
+    "active_streak_days": 0,
+    "consistency_score": 62
+  },
+  "mood": {
+    "avg_30d": 3.1,
+    "trend": "declining",
+    "recent_checkins": [
+      2,
+      3,
+      2
+    ],
+    "low_count_recent": 2
+  },
+  "data_quality": {
+    "sync_rate_30d": 0.97
+  },
+  "ml": {
+    "persona": "Curious Desk-Sitters",
+    "disengagement_risk": 0.0,
+    "risk_band": "low"
+  }
+}

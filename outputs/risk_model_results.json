@@ -1,0 +1,43 @@
+{
+  "n_members": 500,
+  "positives": 66,
+  "positive_rate": 0.132,
+  "baseline_rule_no_opens_last_7d": {
+    "precision": 0.711,
+    "recall": 0.818,
+    "roc_auc": 0.884
+  },
+  "logistic_regression": {
+    "roc_auc": 0.974,
+    "pr_auc": 0.9,
+    "at_threshold_0.5": {
+      "precision": 0.714,
+      "recall": 0.909
+    }
+  },
+  "random_forest": {
+    "roc_auc": 0.979,
+    "pr_auc": 0.899,
+    "at_threshold_0.5": {
+      "precision": 0.852,
+      "recall": 0.788
+    }
+  },
+  "chosen_model": "random_forest",
+  "operating_threshold": 0.489,
+  "chosen_at_operating_threshold": {
+    "precision": 0.855,
+    "recall": 0.803
+  },
+  "note": "All numbers are 5-fold cross-validated (each member scored by a model that never saw them).",
+  "top_features_permutation_importance_auc_drop": {
+    "days_since_last_open": 0.0098,
+    "content_views_7d": 0.0073,
+    "app_opens_chg_pct": 0.0051,
+    "app_opens_7d": 0.0043,
+    "app_zero_days_14d": 0.0039,
+    "app_streak_days": 0.0019,
+    "app_opens_30d": 0.0013,
+    "active_minutes_chg_pct": 0.0007
+  }
+}

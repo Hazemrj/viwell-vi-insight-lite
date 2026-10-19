@@ -1,0 +1,70 @@
+{
+  "member_id": "M0140",
+  "as_of": "2026-09-28",
+  "windows_days": [
+    7,
+    30
+  ],
+  "profile": {
+    "age_band": "45-54",
+    "job_type": "field"
+  },
+  "metrics": {
+    "steps": {
+      "7d": 16349,
+      "30d": 15649,
+      "chg_pct": 4.5
+    },
+    "active_minutes": {
+      "7d": 100.8,
+      "30d": 89.3,
+      "chg_pct": 12.9
+    },
+    "sleep_hours": {
+      "7d": 7.5,
+      "30d": 7.5,
+      "chg_pct": -0.8
+    },
+    "resting_hr": {
+      "7d": 55.5,
+      "30d": 54.5,
+      "chg_pct": 1.8
+    }
+  },
+  "engagement": {
+    "app_opens_per_day": {
+      "7d": 3.6,
+      "30d": 3.3,
+      "chg_pct": 7.1
+    },
+    "days_since_last_open": 0,
+    "last_active_date": "2026-09-28",
+    "app_streak_days": 29,
+    "content_views_7d": 18,
+    "challenges_joined_30d": 1
+  },
+  "activity": {
+    "active_streak_days": 76,
+    "consistency_score": 68
+  },
+  "mood": {
+    "avg_30d": 4.0,
+    "trend": "stable",
+    "recent_checkins": [
+      4,
+      3,
+      4,
+      5,
+      4
+    ],
+    "low_count_recent": 0
+  },
+  "data_quality": {
+    "sync_rate_30d": 0.73
+  },
+  "ml": {
+    "persona": "Engaged Achievers",
+    "disengagement_risk": 0.02,
+    "risk_band": "low"
+  }
+}

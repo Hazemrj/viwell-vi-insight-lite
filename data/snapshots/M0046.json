@@ -1,0 +1,64 @@
+{
+  "member_id": "M0046",
+  "as_of": "2026-09-28",
+  "windows_days": [
+    7,
+    30
+  ],
+  "profile": {
+    "age_band": "35-44",
+    "job_type": "desk"
+  },
+  "metrics": {
+    "steps": {
+      "7d": 6240,
+      "30d": 5263,
+      "chg_pct": 18.6
+    },
+    "active_minutes": {
+      "7d": 45.2,
+      "30d": 39.6,
+      "chg_pct": 14.3
+    },
+    "sleep_hours": {
+      "7d": 7.7,
+      "30d": 7.4,
+      "chg_pct": 4.7
+    },
+    "resting_hr": {
+      "7d": 55.8,
+      "30d": 57.2,
+      "chg_pct": -2.5
+    }
+  },
+  "engagement": {
+    "app_opens_per_day": {
+      "7d": 0.0,
+      "30d": 0.0,
+      "chg_pct": null
+    },
+    "days_since_last_open": 40,
+    "last_active_date": "2026-08-19",
+    "app_streak_days": 0,
+    "content_views_7d": 0,
+    "challenges_joined_30d": 0
+  },
+  "activity": {
+    "active_streak_days": 7,
+    "consistency_score": 62
+  },
+  "mood": {
+    "avg_30d": null,
+    "trend": "insufficient_data",
+    "recent_checkins": [],
+    "low_count_recent": 0
+  },
+  "data_quality": {
+    "sync_rate_30d": 0.57
+  },
+  "ml": {
+    "persona": "Quiet Drifters",
+    "disengagement_risk": 0.95,
+    "risk_band": "high"
+  }
+}

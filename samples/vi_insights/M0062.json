@@ -1,0 +1,22 @@
+{
+  "member_id": "M0062",
+  "insight": "You've been consistently active, and your recent streak shows you're in top form!",
+  "evidence": [
+    "app_opens_per_day_7d: 1.6 vs baseline 2.1 (-25.2%)",
+    "active_minutes_7d: 88.1 vs baseline 82.2 (+7.2%)"
+  ],
+  "actions": [
+    "Try a new outdoor activity for 15 minutes this weekend.",
+    "Challenge yourself to take the stairs instead of the elevator for 3 days this week."
+  ],
+  "tone": "encouraging",
+  "safety_flag": false,
+  "meta": {
+    "source": "llm",
+    "attempts": 1,
+    "backend": "ollama",
+    "model": "qwen2.5:3b",
+    "problems": [],
+    "latency_ms": 16610
+  }
+}

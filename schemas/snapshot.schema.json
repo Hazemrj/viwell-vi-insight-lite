@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VI member snapshot",
+  "description": "Compact, privacy-safe summary of one member, read by the VI coaching service. member_id is a pseudonym; no names, emails, dates of birth, company or gender.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["member_id", "as_of", "windows_days", "profile", "metrics", "engagement", "activity", "mood", "data_quality", "ml"],
+  "$defs": {
+    "trend": {
+      "type": "object", "additionalProperties": false, "required": ["7d", "30d", "chg_pct"],
+      "properties": {
+        "7d":  {"type": ["number", "null"], "description": "average of the last 7 days"},
+        "30d": {"type": ["number", "null"], "description": "average of the last 30 days = the member's own baseline"},
+        "chg_pct": {"type": ["number", "null"], "description": "(7d - 30d) / 30d * 100"}
+      }
+    }
+  },
+  "properties": {
+    "member_id": {"type": "string", "pattern": "^M[0-9]{4}$"},
+    "as_of": {"type": "string", "format": "date", "description": "last day included in the snapshot"},
+    "windows_days": {"type": "array", "items": {"type": "integer"}, "description": "the window lengths used: [7, 30]"},
+    "profile": {
+      "type": "object", "additionalProperties": false, "required": ["age_band", "job_type"],
+      "properties": {
+        "age_band": {"type": "string"},
+        "job_type": {"enum": ["desk", "field", "shift"]}
+      }
+    },
+    "metrics": {
+      "type": "object", "additionalProperties": false,
+      "required": ["steps", "active_minutes", "sleep_hours", "resting_hr"],
+      "properties": {
+        "steps": {"$ref": "#/$defs/trend"}, "active_minutes": {"$ref": "#/$defs/trend"},
+        "sleep_hours": {"$ref": "#/$defs/trend"}, "resting_hr": {"$ref": "#/$defs/trend"}
+      }
+    },
+    "engagement": {
+      "type": "object", "additionalProperties": false,
+      "required": ["app_opens_per_day", "days_since_last_open", "last_active_date", "app_streak_days", "content_views_7d", "challenges_joined_30d"],
+      "properties": {
+        "app_opens_per_day": {"$ref": "#/$defs/trend"},
+        "days_since_last_open": {"type": "integer"},
+        "last_active_date": {"type": ["string", "null"]},
+        "app_streak_days": {"type": "integer"},
+        "content_views_7d": {"type": "integer"},
+        "challenges_joined_30d": {"type": "integer"}
+      }
+    },
+    "activity": {
+      "type": "object", "additionalProperties": false, "required": ["active_streak_days", "consistency_score"],
+      "properties": {
+        "active_streak_days": {"type": "integer", "description": "consecutive days with >= 30 active minutes (unsynced days skipped)"},
+        "consistency_score": {"type": ["number", "null"], "minimum": 0, "maximum": 100}
+      }
+    },
+    "mood": {
+      "type": "object", "additionalProperties": false,
+      "required": ["avg_30d", "trend", "recent_checkins", "low_count_recent"],
+      "properties": {
+        "avg_30d": {"type": ["number", "null"]},
+        "trend": {"enum": ["improving", "stable", "declining", "insufficient_data"]},
+        "recent_checkins": {"type": "array", "maxItems": 5, "items": {"type": "integer", "minimum": 1, "maximum": 5},
+                            "description": "last (up to) 5 mood check-ins from the last 14 days, oldest first"},
+        "low_count_recent": {"type": "integer", "description": "how many of recent_checkins are <= 2"}
+      }
+    },
+    "data_quality": {
+      "type": "object", "additionalProperties": false, "required": ["sync_rate_30d"],
+      "properties": {"sync_rate_30d": {"type": "number", "minimum": 0, "maximum": 1}}
+    },
+    "ml": {
+      "type": "object", "additionalProperties": false, "required": ["persona", "disengagement_risk", "risk_band"],
+      "properties": {
+        "persona": {"type": ["string", "null"]},
+        "disengagement_risk": {"type": ["number", "null"], "minimum": 0, "maximum": 1,
+                               "description": "model probability of ZERO app opens in the next 14 days"},
+        "risk_band": {"enum": ["low", "medium", "high", null]}
+      }
+    }
+  }
+}

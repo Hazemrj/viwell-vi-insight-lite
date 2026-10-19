@@ -1,0 +1,22 @@
+[
+  {
+    "persona": "Curious Desk-Sitters",
+    "members": 155,
+    "description": "Like the app and its content but move less than average - a good fit for easy, small activity goals."
+  },
+  {
+    "persona": "Irregular Rhythms",
+    "members": 81,
+    "description": "Unpredictable sleep and activity (typically shift workers) - offer flexible, routine-building tips."
+  },
+  {
+    "persona": "Engaged Achievers",
+    "members": 91,
+    "description": "Very active, open the app almost daily and love content - ideal for challenges and streaks."
+  },
+  {
+    "persona": "Quiet Drifters",
+    "members": 173,
+    "description": "Rarely open the app and are only moderately active - at highest risk of dropping off; need a simple hook."
+  }
+]

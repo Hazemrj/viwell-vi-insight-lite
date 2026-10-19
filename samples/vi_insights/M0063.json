@@ -1,0 +1,21 @@
+{
+  "member_id": "M0063",
+  "insight": "Your active streak is on fire! Keep up the good work with your consistent 49.1 active minutes per day.",
+  "evidence": [
+    "active_minutes_7d: 49.1 vs baseline 44.9 (+9.5%)"
+  ],
+  "actions": [
+    "Try a quick 10-minute walk during your lunch break to boost your streak",
+    "Challenge yourself to find 10 minutes of light exercise before bed to improve your sleep hours"
+  ],
+  "tone": "celebratory",
+  "safety_flag": false,
+  "meta": {
+    "source": "llm",
+    "attempts": 1,
+    "backend": "ollama",
+    "model": "qwen2.5:3b",
+    "problems": [],
+    "latency_ms": 16831
+  }
+}

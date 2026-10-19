@@ -1,0 +1,21 @@
+{
+  "member_id": "M0286",
+  "insight": "Your recent drop in steps suggests you might benefit from setting small, regular goals to increase your activity levels.",
+  "evidence": [
+    "steps_7d: 2746 vs baseline 3013 (-8.9%)"
+  ],
+  "actions": [
+    "Try taking a 10-minute walk during your lunch break",
+    "Set a reminder to stand up and move for 2 minutes every hour"
+  ],
+  "tone": "supportive",
+  "safety_flag": false,
+  "meta": {
+    "source": "llm",
+    "attempts": 1,
+    "backend": "ollama",
+    "model": "qwen2.5:3b",
+    "problems": [],
+    "latency_ms": 14001
+  }
+}

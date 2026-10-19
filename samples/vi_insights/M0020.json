@@ -1,0 +1,21 @@
+{
+  "member_id": "M0020",
+  "insight": "Your active minutes have slightly decreased, but you've been opening the app more frequently. Keep up the good work!",
+  "evidence": [
+    "active_minutes_7d: 34.4 vs baseline 37.2 (-7.5%)"
+  ],
+  "actions": [
+    "Try a 10-minute walk during your lunch break",
+    "Use the app to track your daily water intake for 3 days"
+  ],
+  "tone": "encouraging",
+  "safety_flag": false,
+  "meta": {
+    "source": "llm",
+    "attempts": 1,
+    "backend": "ollama",
+    "model": "qwen2.5:3b",
+    "problems": [],
+    "latency_ms": 14482
+  }
+}

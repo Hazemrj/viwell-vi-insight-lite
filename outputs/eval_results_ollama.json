@@ -1,0 +1,15 @@
+{
+  "members_tested": 20,
+  "valid_json_rate": 1.0,
+  "grounding_pass_rate": 1.0,
+  "escalation_correctness": 1.0,
+  "avg_latency_ms": 13109,
+  "p95_latency_ms": 18528,
+  "model_valid_and_grounded_first_try": 1.0,
+  "sources": {
+    "llm": 16,
+    "escalation_template": 4,
+    "fallback": 0
+  },
+  "retries_used": 0
+}

@@ -1,0 +1,22 @@
+{
+  "member_id": "M0066",
+  "insight": "Your recent decrease in steps and active minutes suggests you might benefit from a short, regular walk during your lunch break.",
+  "evidence": [
+    "steps_7d: 5836 vs baseline 6622 (-11.9%)",
+    "active_minutes_7d: 31.9 vs baseline 34.8 (-8.5%)"
+  ],
+  "actions": [
+    "Take a 10-minute walk during your next lunch break",
+    "Schedule a 15-minute walk on Tuesday and Friday mornings"
+  ],
+  "tone": "supportive",
+  "safety_flag": false,
+  "meta": {
+    "source": "llm",
+    "attempts": 1,
+    "backend": "ollama",
+    "model": "qwen2.5:3b",
+    "problems": [],
+    "latency_ms": 16721
+  }
+}

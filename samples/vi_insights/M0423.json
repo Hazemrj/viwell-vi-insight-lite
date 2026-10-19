@@ -1,0 +1,22 @@
+{
+  "member_id": "M0423",
+  "insight": "Your consistent app usage and active minutes have shown significant improvements, keeping you on track for a healthy lifestyle.",
+  "evidence": [
+    "app_opens_per_day_7d: 1.0 vs baseline 0.8 (+20.0%)",
+    "active_minutes_7d: 40.0 vs baseline 35.8 (+11.8%)"
+  ],
+  "actions": [
+    "Take a 10-minute walk during your lunch break to boost your active minutes",
+    "Schedule a 15-minute meditation session to improve your mood"
+  ],
+  "tone": "celebratory",
+  "safety_flag": false,
+  "meta": {
+    "source": "llm",
+    "attempts": 1,
+    "backend": "ollama",
+    "model": "qwen2.5:3b",
+    "problems": [],
+    "latency_ms": 17240
+  }
+}

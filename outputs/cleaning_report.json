@@ -1,0 +1,15 @@
+{
+  "rows": 45000,
+  "unsynced_days": 3491,
+  "unsynced_pct": 7.76,
+  "outliers_removed": {
+    "steps": 10,
+    "active_minutes": 4,
+    "sleep_hours": 8,
+    "resting_hr": 8
+  },
+  "outliers_removed_total": 30,
+  "members": 500,
+  "snapshot_tokens_max": 262,
+  "snapshot_tokens_mean": 259
+}

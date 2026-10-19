@@ -1,0 +1,22 @@
+{
+  "member_id": "M0332",
+  "insight": "Your consistent increase in steps and active minutes shows you're finding more opportunities for physical activity, which is great!",
+  "evidence": [
+    "steps_7d: 7434 vs baseline 6430 (+15.6%)",
+    "active_minutes_7d: 32.4 vs baseline 30.4 (+6.8%)"
+  ],
+  "actions": [
+    "Take a 10-minute walk during your lunch break",
+    "Challenge yourself to find 10 minutes of active movement during your commute"
+  ],
+  "tone": "celebratory",
+  "safety_flag": false,
+  "meta": {
+    "source": "llm",
+    "attempts": 1,
+    "backend": "ollama",
+    "model": "qwen2.5:3b",
+    "problems": [],
+    "latency_ms": 16757
+  }
+}

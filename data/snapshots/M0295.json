@@ -1,0 +1,68 @@
+{
+  "member_id": "M0295",
+  "as_of": "2026-09-28",
+  "windows_days": [
+    7,
+    30
+  ],
+  "profile": {
+    "age_band": "18-24",
+    "job_type": "shift"
+  },
+  "metrics": {
+    "steps": {
+      "7d": 4165,
+      "30d": 4651,
+      "chg_pct": -10.4
+    },
+    "active_minutes": {
+      "7d": 33.4,
+      "30d": 34.7,
+      "chg_pct": -3.7
+    },
+    "sleep_hours": {
+      "7d": 5.2,
+      "30d": 5.7,
+      "chg_pct": -9.5
+    },
+    "resting_hr": {
+      "7d": 72.1,
+      "30d": 71.5,
+      "chg_pct": 0.8
+    }
+  },
+  "engagement": {
+    "app_opens_per_day": {
+      "7d": 1.6,
+      "30d": 1.9,
+      "chg_pct": -17.3
+    },
+    "days_since_last_open": 1,
+    "last_active_date": "2026-09-27",
+    "app_streak_days": 0,
+    "content_views_7d": 5,
+    "challenges_joined_30d": 0
+  },
+  "activity": {
+    "active_streak_days": 1,
+    "consistency_score": 48
+  },
+  "mood": {
+    "avg_30d": 3.4,
+    "trend": "stable",
+    "recent_checkins": [
+      4,
+      3,
+      3
+    ],
+    "low_count_recent": 0
+  },
+  "data_quality": {
+    "sync_rate_30d": 0.93
+  },
+  "ml": {
+    "persona": "Irregular Rhythms",
+    "disengagement_risk": 0.03,
+    "risk_band": "low"
+  }
+}

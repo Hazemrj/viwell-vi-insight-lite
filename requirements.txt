@@ -1,0 +1,19 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+sqlalchemy
+pymysql
+cryptography
+fastapi
+uvicorn
+requests
+httpx
+jsonschema
+joblib
+pytest
+# only needed to re-run the notebooks:
+jupyter
+nbformat
+nbconvert
+ipykernel
